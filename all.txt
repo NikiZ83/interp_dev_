@@ -1,0 +1,204 @@
+Файл: .gitignore
+==================================================
+data/raw
+
+data/processed
+
+/models
+
+__pycache__/
+*.pyc
+
+.DS_Store
+*.log
+==================================================
+
+Файл: README.md
+==================================================
+PP_past/
+├── data/
+│   ├── raw/
+│   │   ├── train-clean-100/
+│   │   │   ├── speaker_id/
+│   │   │   │   ├── chapter_id/
+│   │   │   │   │   ├── audio_file.flac
+│   │   │   │   │   ├── chapter_id.trans.txt
+│   │   ├── dev-clean/
+│   │   │   ├── speaker_id/
+│   │   │   │   ├── chapter_id/
+│   │   │   │   │   ├── audio_file.flac
+│   │   │   │   │   ├── chapter_id.trans.txt
+│   │   ├── test-clean/
+│   │   │   ├── speaker_id/
+│   │   │   │   ├── chapter_id/
+│   │   │   │   │   ├── audio_file.flac
+│   │   │   │   │   ├── chapter_id.trans.txt
+│   ├── processed/
+│   │   ├── train_wpm.csv
+│   │   ├── dev_wpm.csv
+│   │   ├── test_wpm.csv
+│   │   ├── train_embeddings.pkl
+│   │   ├── dev_embeddings.pkl
+│   │   ├── test_embeddings.pkl
+├── src/
+│   ├── preprocess.py
+│   ├── extract_embeddings.py
+│   ├── train_mlp.py
+│   ├── utils.py
+├── models/
+│   ├── mlp_model.h5
+│   ├── mlp_best_weights.h5
+├── results/
+│   ├── training_history.csv
+│   ├── test_predictions.csv
+│   ├── plots/
+│   │   ├── loss_plot.png (опционально)
+├── report/
+│   ├── report.pdf (или report.docx)
+│   ├── slides.pptx (если требуется)
+├── README.md
+==================================================
+
+Файл: poetry.toml
+==================================================
+[virtualenvs]
+in-project = true
+
+==================================================
+
+Файл: pyproject.toml
+==================================================
+[tool.poetry]
+name = "pp-past"
+version = "0.1.0"
+description = ""
+authors = ["NikiZ83 <nikita.zh83@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydub = "^0.25.1"
+librosa = "^0.11.0"
+pandas = "^2.3.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+==================================================
+
+Файл: src/preprocess.py
+==================================================
+import argparse
+import logging
+from pathlib import Path
+
+import pandas as pd
+from pydub import AudioSegment
+
+
+logger = logging.getLogger(__name__)
+
+
+def get_wpm(audio_path: Path, text: str) -> float:
+    """
+    Рассчитывает скорость речи (WPM) для аудиофайла.
+    WPM - word per minute
+
+    :param audio_path: Путь к аудиофайлу (.flac)
+    :param text: Транскрипция аудио
+    :return: Скорость речи в словах в минуту (WPM)
+    """
+    try:
+        audio = AudioSegment.from_file(audio_path, format="flac")
+        duration_minutes = len(audio) / 1000 / 60  # в миллисекундах
+        word_count = len([word for word in text.strip().split() if word])
+        return word_count / duration_minutes if duration_minutes > 0 else 0
+    except Exception as err:
+        logger.error(f"Ошибка при обработке {audio_path}: {err}")
+        return 0
+
+def process_subset(base_path: Path, output_csv: Path):
+    """
+    Обрабатывает один subject LibriSpeech (train/dev/test),
+    создает CSV с WPM
+
+    :param base_path: Путь к папке subject
+    :param output_csv: Путь для сохранения CSV
+    :return:
+    """
+
+    data = []
+
+    if not base_path.exists():
+        logger.error(f"Папка {base_path} не найдена!")
+        return
+
+    for speaker_path in base_path.iterdir():  # проходим по всем спикерам
+        if not speaker_path.is_dir():
+            continue
+
+        for chapter_path in speaker_path.iterdir():  # проходим по всем главам спикера
+            if not chapter_path.is_dir():
+                continue
+
+            trans_file = chapter_path / f"{chapter_path.name}.trans.txt"
+            if not trans_file.exists():
+                logger.warning(f"Транскрипция не найдена: {trans_file}")
+                continue
+
+            try:
+                with trans_file.open('r', encoding="utf-8") as file:
+                    for line in file:
+                        try:
+                            audio_id, text = line.strip().split(' ', 1)
+                            audio_file = chapter_path / f"{audio_id}.flac"
+                            if audio_file.exists():
+                                wpm = get_wpm(audio_file, text)
+                                data.append({
+                                    'audio_path': str(audio_file),
+                                    'text': text,
+                                    'wpm': wpm,
+                                    'speaker_id': speaker_path.name,
+                                    'chapter_id': chapter_path.name,
+                                    'audio_id': audio_id
+                                })
+                            else:
+                                logger.warning(f"Аудиофайл не найден: {audio_file}")
+                        except ValueError:
+                            logger.error(f"Ошибка формата в строке: {line.strip()}")
+            except Exception as err:
+                logger.error(f"Ошибка при чтении {trans_file}: {err}")
+    if data:
+        df = pd.DataFrame(data)
+        output_csv.parent.mkdir(parents=True, exist_ok=True)
+        df.to_csv(output_csv, index=False)
+        logger.info(f"Сохранено {len(df)} записей в {output_csv}")
+    else:
+        logger.warning(f"Нет данных для сохранения в {output_csv}")
+
+def main():
+    parser = argparse.ArgumentParser(description="Preprocess LibriSpeech for speech rate (WPM).")
+    parser.add_argument('--data_dir', type=Path, default=Path('data/raw'), help='Path to raw LibriSpeech data')
+    parser.add_argument('--output_dir', type=Path, default=Path('data/processed'),
+                        help='Path to save processed CSV files')
+    args = parser.parse_args()
+
+    subsets = [
+        ('train-clean-100', 'train_wpm.csv'),
+        ('dev-clean', 'dev_wpm.csv'),
+        ('test-clean', 'test_wpm.csv')
+    ]
+
+    for subset, output_file in subsets:
+        base_path = args.data_dir / subset
+        output_csv = args.output_dir / output_file
+        logger.info(f"Обработка {subset}...")
+        process_subset(base_path, output_csv)
+
+
+if __name__ == "__main__":
+    main()
+==================================================
+
