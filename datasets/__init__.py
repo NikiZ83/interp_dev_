@@ -1,2 +1,2 @@
 from .activations_dataset import ActivationDataset
-from .embeddings_dataset import ClassificationEmbeddingsDataset
+from .embeddings_dataset import RegressionEmbeddingsDataset

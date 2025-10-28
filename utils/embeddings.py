@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from datasets import ClassificationEmbeddingsDataset
+from datasets import RegressionEmbeddingsDataset
 
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
@@ -12,9 +12,9 @@ def get_loaders(source_path, source_type):
     """
     Creates dataloaders for train and test files.
     """
-    train_dataset = ClassificationEmbeddingsDataset(
+    train_dataset = RegressionEmbeddingsDataset(
         source_path, split="train", source_type=source_type)
-    test_dataset = ClassificationEmbeddingsDataset(
+    test_dataset = RegressionEmbeddingsDataset(
         source_path, split="test", source_type=source_type)
 
     train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)

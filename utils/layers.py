@@ -1,3 +1,4 @@
+# utils/layers.py
 from .extract_features import extract_features
 import os
 from pathlib import Path
@@ -57,19 +58,14 @@ class GetActivations(nn.Module):
         if path.exists():
             self.saved_out = torch.load(path, map_location=device)
 
-    def forward(
-            self, x, target_layer, from_activation=False, identity_file=None
-    ):
-        """
-        A forward pass through the model for the specified layer,
-        with identity-tensors saved or loaded.
-        """
+    def forward(self, x, target_layer, from_activation=False, identity_file=None):
         activations = {}
         model_front = self.model.model.front
         out = x
 
         if not from_activation:
             out = self._process_first_relu(x, model_front)
+            self.saved_out = out.clone()  # identity для первого residual
 
             if identity_file:
                 self.save_identity(identity_file)
@@ -86,35 +82,39 @@ class GetActivations(nn.Module):
             c_relu = 0
 
             for block_idx, block in layer.named_children():
-                identity = self.saved_out
+                identity = self.saved_out.clone()
 
+                # --- ReLU после conv1 ---
                 c_relu += 1
+                out = block.relu(block.bn1(block.conv1(out)))
                 if f"{name} relu {c_relu}" == target_layer:
-                    out = block.relu(block.bn1(block.conv1(out)))
                     activations[f"{name} relu {c_relu}"] = out
                     return activations, out
 
+                # --- SimAM ---
                 c_sim += 1
+                out = block.bn2(block.conv2(out))
+                out = block.SimAM(out)
                 if f"{name} SimAM {c_sim}" == target_layer:
-                    out = block.bn2(block.conv2(out))
-                    out = block.SimAM(out)
                     activations[f"{name} SimAM {c_sim}"] = out
                     return activations, out
 
+                # --- ReLU после add (residual) ---
                 c_relu += 1
+                if block.downsample is not None:
+                    identity = block.downsample(identity)
+
+                out += identity
+                out = block.relu(out)
+                self.saved_out = out.clone()  # обновляем identity
+
+                if identity_file:
+                    self.save_identity(identity_file)
                 if f"{name} relu {c_relu}" == target_layer:
-                    if block.downsample is not None:
-                        identity = block.downsample(identity)
-
-                    out += identity
-                    out = block.relu(out)
-                    self.saved_out = out.clone()
-
-                    if identity_file:
-                        self.save_identity(identity_file)
                     activations[f"{name} relu {c_relu}"] = out
                     return activations, out
 
+        # pooling
         if "pooling" == target_layer:
             out = self.model.model.pooling(out)
             activations["pooling"] = out

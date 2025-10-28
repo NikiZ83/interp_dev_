@@ -93,9 +93,9 @@ def main():
     args = parser.parse_args()
 
     subsets = [
-        ('dev-clean', 'dev_cps.csv'),  # Изменено с 'dev_wpm.csv' на 'dev_cps.csv'
-        ('test-clean', 'test_cps.csv'),  # Изменено с 'test_wpm.csv' на 'test_cps.csv'
-        ('train-clean-100', 'train_cps.csv'),  # Изменено с 'train_wpm.csv' на 'train_cps.csv'
+        ('dev-clean', 'dev_cps.csv'),
+        ('test-clean', 'test_cps.csv'),
+        ('train-clean-100', 'train_cps.csv'),
     ]
 
     for subset, output_file in subsets:

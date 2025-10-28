@@ -2,9 +2,12 @@ import torch
 import torchaudio
 import torchaudio.compliance.kaldi as kaldi
 import torchaudio.transforms as T
+from joblib import Memory
 
 resample_rate = 16000
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cpu")  # Fix to CPU to avoid potential GPU OOM and hanging
+
+memory = Memory(location="utils/cache_dir", verbose=0)
 
 
 def compute_fbank(wavform,
@@ -23,6 +26,7 @@ def compute_fbank(wavform,
     return feat
 
 
+@memory.cache
 def extract_features(audio_path: str):
     pcm, sample_rate = torchaudio.load(audio_path,
                                        normalize=False)

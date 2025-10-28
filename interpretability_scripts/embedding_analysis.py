@@ -14,9 +14,6 @@ import torch.optim as optim
 
 
 def main():
-    """
-    Main function
-    """
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--embeddings_source",
@@ -35,7 +32,7 @@ def main():
         "--eval_path",
         type=str,
         default="./scores/gender.txt",
-        help="Save path for evaluation results file (txt)"
+        help="Save path for evaluation results_1 file (txt)"
     )
     parser.add_argument(
         "--visual_path",
