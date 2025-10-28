@@ -1,0 +1,40 @@
+def assign_labels_by_parent_dir(embeddings):
+    """
+    Assigns labels to classes. In this case, by the name of the parent folder.
+    """
+    for emb in embeddings:
+        class_name = Path(emb['file_path']).parent.name
+        emb['label'] = class_name
+
+def get_audio_path(audio_dir):
+    """
+    Recursively finds all audio files in the specified directory.
+    """
+    audio_dir = Path(audio_dir)
+    return list(audio_dir.glob('**/*.wav')) + list(audio_dir.glob('**/*.mp3'))
+
+
+def save_to_npy(embeddings, save_dir):
+    """
+    Saves embeddings in .npy format.
+    """
+    numpy_embs = np.array(embeddings)
+    np.save(os.path.join(save_dir, "numpy_embs.npy"), numpy_embs)
+
+
+def save_to_chromadb(embeddings, db_path, split):
+    """
+    Stores embeddings in ChromaDB.
+    """
+    client = chromadb.PersistentClient(path=db_path)
+    collection = client.get_or_create_collection(name="gender_embeddings")
+
+    collection.add(
+        ids=[f"{split}_{i}" for i in range(len(embeddings))],
+        embeddings=[item['embedding'] for item in embeddings],
+        metadatas=[{
+            "file_path": item['file_path'], "label": item['label'],
+            "split": split
+        }
+            for item in embeddings]
+    )

@@ -1,0 +1,2019 @@
+Файл: .gitignore
+==================================================
+data/raw
+
+data/processed
+
+/models
+
+__pycache__/
+*.pyc
+
+.DS_Store
+*.log
+==================================================
+
+Файл: Project Management/.obsidian/app.json
+==================================================
+{}
+==================================================
+
+Файл: Project Management/.obsidian/appearance.json
+==================================================
+{}
+==================================================
+
+Файл: Project Management/.obsidian/core-plugins.json
+==================================================
+{
+  "file-explorer": true,
+  "global-search": true,
+  "switcher": true,
+  "graph": true,
+  "backlink": true,
+  "canvas": true,
+  "outgoing-link": true,
+  "tag-pane": true,
+  "footnotes": false,
+  "properties": false,
+  "page-preview": true,
+  "daily-notes": true,
+  "templates": true,
+  "note-composer": true,
+  "command-palette": true,
+  "slash-command": false,
+  "editor-status": true,
+  "bookmarks": true,
+  "markdown-importer": false,
+  "zk-prefixer": false,
+  "random-note": false,
+  "outline": true,
+  "word-count": true,
+  "slides": false,
+  "audio-recorder": false,
+  "workspaces": false,
+  "file-recovery": true,
+  "publish": false,
+  "sync": true,
+  "bases": true,
+  "webviewer": false
+}
+==================================================
+
+Файл: Project Management/.obsidian/workspace.json
+==================================================
+{
+  "main": {
+    "id": "262411b30bef2f8d",
+    "type": "split",
+    "children": [
+      {
+        "id": "5583341665851149",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e682f73d38e3db42",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Предолжения.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Предолжения"
+            }
+          },
+          {
+            "id": "1280a9faa84540a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "preprocess.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "preprocess"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bb80c36c3b9a308e",
+    "type": "split",
+    "children": [
+      {
+        "id": "642d0f3584f8583b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2e32fa1454bad69",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a6b545c78694072f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c694fd5db3fb4dca",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "32b5572f2c36bea3",
+    "type": "split",
+    "children": [
+      {
+        "id": "65480cbec5993d32",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a19c0541ebd1ac7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "preprocess.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for preprocess"
+            }
+          },
+          {
+            "id": "45014e817793c37b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "preprocess.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from preprocess"
+            }
+          },
+          {
+            "id": "8f9b5ff57b6ac171",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3ba9e37f5edfce81",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "preprocess.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of preprocess"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "1280a9faa84540a7",
+  "lastOpenFiles": [
+    "Предолжения.md",
+    "preprocess.md"
+  ]
+}
+==================================================
+
+Файл: Project Management/preprocess.md
+==================================================
+### Основная задача кода
+
+Код обрабатывает три подмножества данных LibriSpeech (dev-clean, test-clean, train-clean-100), расположенные в папке data/raw, и для каждого аудиофайла вычисляет скорость речи (CPS). Результаты сохраняются в виде CSV-файлов в папке data/processed.
+
+### Выход кода
+
+1. **CSV-файлы в папке data/processed**: После выполнения кода в папке data/processed создаются три CSV-файла:
+
+    - dev_cps.csv
+    - test_cps.csv
+    - train_cps.csv
+    
+    Каждый из этих файлов содержит следующие столбцы:
+    
+    - audio_path: Полный путь к аудиофайлу (формата .flac) в подмножестве LibriSpeech.
+    - text: Текстовая транскрипция аудиофайла (из файла .trans.txt).
+    - cps: Скорость речи в буквах в секунду (число букв и цифр в тексте, деленное на длительность аудио в секундах).
+    - speaker_id: Идентификатор спикера (название папки спикера, например, 103).
+    - chapter_id: Идентификатор главы (название папки главы, например, 1240).
+    - audio_id: Идентификатор аудиофайла (например, 103-1240-0000).
+==================================================
+
+Файл: Project Management/Предолжения.md
+==================================================
+В рамках проекта по "Искусственному Интеллекту" мы будем  реализовать новую фичу для анализа аудиоданных из датасета LibriSpeech (который уже есть в data/raw: train-clean-100, dev-clean, test-clean). Идея заключается в вычислении скорости речи для каждого аудиофрагмента и последующей категоризации этих значений в классы. Это позволит модели лучше захватывать вариации в темпе речи, что полезно для задач вроде распознавания речи или анализа стиля говорящего. Мы будем использовать метрику "количество букв в секунду" (characters per second, CPS), так как она простая и не требует сложных библиотек. Классы подберём эмпирически на основе распределения данных, чтобы они были четко разделимыми и отражали реальные различия (например, медленная, средняя, быстрая речь).
+==================================================
+
+Файл: README.md
+==================================================
+PP_past/
+├── data/
+│   ├── raw/
+│   │   ├── train-clean-100/
+│   │   │   ├── speaker_id/
+│   │   │   │   ├── chapter_id/
+│   │   │   │   │   ├── audio_file.flac
+│   │   │   │   │   ├── chapter_id.trans.txt
+│   │   ├── dev-clean/
+│   │   │   ├── speaker_id/
+│   │   │   │   ├── chapter_id/
+│   │   │   │   │   ├── audio_file.flac
+│   │   │   │   │   ├── chapter_id.trans.txt
+│   │   ├── test-clean/
+│   │   │   ├── speaker_id/
+│   │   │   │   ├── chapter_id/
+│   │   │   │   │   ├── audio_file.flac
+│   │   │   │   │   ├── chapter_id.trans.txt
+│   ├── processed/
+│   │   ├── train_wpm.csv
+│   │   ├── dev_wpm.csv
+│   │   ├── test_wpm.csv
+│   │   ├── train_embeddings.pkl
+│   │   ├── dev_embeddings.pkl
+│   │   ├── test_embeddings.pkl
+├── src/
+│   ├── preprocess.py
+│   ├── extract_embeddings.py
+│   ├── train_mlp.py
+│   ├── utils.py
+├── models/
+│   ├── mlp_model.h5
+│   ├── mlp_best_weights.h5
+├── results/
+│   ├── training_history.csv
+│   ├── test_predictions.csv
+│   ├── plots/
+│   │   ├── loss_plot.png (опционально)
+├── report/
+│   ├── report.pdf (или report.docx)
+│   ├── slides.pptx (если требуется)
+├── README.md
+==================================================
+
+Файл: configs/README.md
+==================================================
+# Наполенение
+
+Здесь будут конфиги. Всё у нас должно работать через конфиг, не надо ручками задавать что где и как
+==================================================
+
+Файл: datasets/README.md
+==================================================
+# Здесь будут скрипты с датасетами для каждого топика
+
+Вместо того, чтобы плодить тыщу папок, здесь для каждого топика, если надо, будет создаваться скрипт с датасетом
+
+TODO: добавить абстрактный класс
+==================================================
+
+Файл: datasets/__init__.py
+==================================================
+from .activations_dataset import ActivationDataset
+from .embeddings_dataset import ClassificationEmbeddingsDataset
+==================================================
+
+Файл: datasets/activations_dataset.py
+==================================================
+from .base_dataset import BaseDataset
+import torch
+
+
+class ActivationDataset(BaseDataset):
+    """
+    Dataset for preparing model activations
+    """
+    def __init__(self, activations, labels):
+        self.audio_data = self.prepare_data(activations)
+        self.labels = torch.tensor(labels, dtype=torch.long)
+
+    def prepare_data(self, activations):
+        activations = [act.clone() for act in activations]
+        max_len = max(act.shape[-1] for act in activations)
+
+        for i in range(len(activations)):
+            pad_size = max_len - activations[i].shape[-1]
+            activations[i] = torch.nn.functional.pad(
+                activations[i], (0, pad_size), value=0.0)
+            if len(activations[i].shape) != 2:
+                activations[i] = activations[i].view(
+                    activations[i].size(0), -1)
+
+        return torch.stack(activations).squeeze(1)
+
+==================================================
+
+Файл: datasets/base_dataset.py
+==================================================
+import abc
+from torch.utils.data import Dataset
+
+
+class BaseDataset(Dataset, abc.ABC):
+    """
+    Abstract base class for datasets
+    """
+    def __init__(self):
+        self.audio_data = None
+        self.labels = None
+
+    def __getitem__(self, idx):
+        if self.audio_data is None:
+            raise NotImplementedError("self.audio_data is not initialized")
+        if self.labels is None:
+            raise NotImplementedError("self.labels is not initialized")
+        return self.audio_data[idx], self.labels[idx]
+
+    def __len__(self):
+        return len(self.labels)
+
+    @abc.abstractmethod
+    def prepare_data(self):
+        pass
+
+==================================================
+
+Файл: datasets/embeddings_dataset.py
+==================================================
+import os
+from .base_dataset import BaseDataset
+
+import chromadb
+import numpy as np
+from sklearn.preprocessing import LabelEncoder
+import torch
+
+
+class ClassificationEmbeddingsDataset(BaseDataset):
+    def __init__(
+            self,
+            source_path,
+            split,
+            source_type,
+            collection_name="gender_embeddings"
+    ):
+        super().__init__()
+        self.lb = LabelEncoder()
+        self.source_path = source_path
+        self.split = split
+        self.source_type = source_type
+        self.collection_name = collection_name
+
+        self.prepare_data()
+
+    def prepare_data(self):
+        """
+        Loads and prepares audio and label data for the dataset
+        depending on the type of data source.
+
+        Depending on the value of the self.source_type attribute,
+        the method selects the method of data loading:
+            - If source_type is npy, the data is loaded from a .npy format file
+                using the get_npy_embeddings method.
+            - If source_type is chromadb, the data is loaded from
+                the ChromaDB database using the get_chroma_embeddings method.
+        """
+        if self.source_type == "npy":
+            audio_data, labels = self.get_npy_embeddings(
+                self.source_path, self.split)
+        elif self.source_type == "chromadb":
+            audio_data, labels = self.get_chroma_embeddings(
+                self.source_path, self.split, self.collection_name)
+        else:
+            raise ValueError(
+                f"Invalid source type: {self.source_type}. "
+                "Choose 'npy' or 'chromadb'.")
+
+        self.audio_data = torch.tensor(audio_data, dtype=torch.float32)
+        self.labels = torch.tensor(labels, dtype=torch.long)
+
+    def get_npy_embeddings(self, source_path, split):
+        """
+        Reads embeddings from a .npy file
+        """
+        source = np.load(os.path.join(
+            source_path, "numpy_embs.npy"), allow_pickle=True)[0]
+        data = source[split]
+        embeddings = np.array([item['embedding'] for item in data])
+        labels = self.lb.fit_transform([item['label'] for item in data])
+        return embeddings, labels
+
+    def get_chroma_embeddings(self, source_path, split, collection_name):
+        """
+        Reads embeddings from ChromaDB
+        """
+        client = chromadb.PersistentClient(path=source_path)
+        collection = client.get_collection(name=collection_name)
+        results = collection.get(where={"split": split}, include=[
+                                 "embeddings", "metadatas"])
+        embeddings = np.array(results['embeddings'], dtype=np.float32)
+        labels = self.lb.fit_transform(
+            [item['label'] for item in results['metadatas']])
+        return embeddings, labels
+
+==================================================
+
+Файл: interpretability_scripts/README.md
+==================================================
+# Наполнение
+
+Здесь будут основные скрипты для интерпретируемости. Я предлагаю их сделать в виду абстрактных классов, например абстрактный класс
+для анализа эмбеддингов, послойного анализ и в будущем для SAE.
+==================================================
+
+Файл: interpretability_scripts/__init__.py
+==================================================
+
+==================================================
+
+Файл: interpretability_scripts/embedding_analysis.py
+==================================================
+import argparse
+import os
+from utils import (
+    get_loaders,
+    save_emb_metrics,
+    save_visualization,
+    evaluate_emb_model
+)
+from models import train_emb_model, EmbeddingModel
+
+import torch
+import torch.nn as nn
+import torch.optim as optim
+
+
+def main():
+    """
+    Main function
+    """
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--embeddings_source",
+        type=str,
+        choices=["npy", "chromadb"],
+        required=True,
+        help="Source for embeddings: npy or chromadb"
+    )
+    parser.add_argument(
+        "--source_path",
+        type=str,
+        default="./embeddings",
+        help="Path to npy file or to chromadb collection folder"
+    )
+    parser.add_argument(
+        "--eval_path",
+        type=str,
+        default="./scores/gender.txt",
+        help="Save path for evaluation results file (txt)"
+    )
+    parser.add_argument(
+        "--visual_path",
+        type=str,
+        default="./result/gender.png",
+        help="Save path for embeddings visualisation"
+    )
+    args = parser.parse_args()
+
+    if not os.path.exists(args.source_path):
+        raise FileNotFoundError(f"Folder {args.source_path} does not exists.")
+
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    train_loader, test_loader, test_dataset, input_dim = get_loaders(
+        args.source_path, args.embeddings_source
+    )
+    model = EmbeddingModel(input_dim, 2).to(device)
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(model.parameters())
+
+    train_emb_model(model, train_loader, optimizer,
+                    criterion, num_epoch=300, device=device)
+
+    metrics = evaluate_emb_model(model, test_loader, device)
+    save_emb_metrics(metrics, args.eval_path)
+    save_visualization(
+        model, test_dataset.audio_data.numpy(),
+        test_dataset.labels.numpy(), args.visual_path, device=device
+    )
+
+
+if __name__ == '__main__':
+    main()
+
+==================================================
+
+Файл: interpretability_scripts/extract_embeddings.py
+==================================================
+import argparse
+import os
+from pathlib import Path
+import pandas as pd
+import numpy as np
+import chromadb
+import torch
+from tqdm import tqdm
+import wespeaker
+import inspect
+
+
+def get_audio_files_from_csv(csv_path):
+    """
+    Reads audio file paths from a CSV file generated by preprocess.py.
+
+    :param csv_path: Path to the CSV file (e.g., data/processed/train_cps.csv)
+    :return: List of audio file paths
+    """
+    df = pd.read_csv(csv_path)
+    return df['audio_path'].tolist()
+
+
+def assign_labels_by_speaker_id(embeddings, csv_path):
+    """
+    Assigns labels to embeddings based on speaker_id from the CSV file.
+
+    :param embeddings: List of dictionaries with 'file_path' and 'embedding'
+    :param csv_path: Path to the CSV file containing speaker_id
+    """
+    df = pd.read_csv(csv_path)
+    path_to_speaker = {row['audio_path']: row['speaker_id'] for _, row in df.iterrows()}
+
+    for emb in embeddings:
+        emb['label'] = path_to_speaker.get(emb['file_path'], 'unknown')
+
+
+def save_to_npy(embeddings, save_dir):
+    """
+    Saves embeddings in .npy format.
+
+    :param embeddings: List of dictionaries containing train and test embeddings
+    :param save_dir: Directory to save the .npy file
+    """
+    os.makedirs(save_dir, exist_ok=True)
+    np.save(os.path.join(save_dir, "numpy_embs.npy"), np.array(embeddings, dtype=object))
+
+
+def save_to_chromadb(embeddings, db_path, split):
+    """
+    Stores embeddings in ChromaDB.
+
+    :param embeddings: List of dictionaries with 'file_path', 'embedding', and 'label'
+    :param db_path: Path to ChromaDB storage
+    :param split: Dataset split (train/test/dev)
+    """
+    client = chromadb.PersistentClient(path=db_path)
+    collection = client.get_or_create_collection(name="gender_embeddings")
+
+    collection.add(
+        ids=[f"{split}_{i}" for i in range(len(embeddings))],
+        embeddings=[item['embedding'] for item in embeddings],
+        metadatas=[{
+            "file_path": item['file_path'],
+            "label": item['label'],
+            "split": split
+        } for item in embeddings]
+    )
+
+
+def extract_embeddings(audio_files, device, pretrain_dir):
+    """
+    Extracts embeddings from audio files using the WeSpeaker model.
+
+    :param audio_files: List of audio file paths
+    :param device: Device to run the model on (cuda/cpu)
+    :param pretrain_dir: Path to the pretrained WeSpeaker model
+    :return: List of dictionaries with 'file_path' and 'embedding'
+    """
+    # print("Available methods:", [method for method in dir(wespeaker) if not method.startswith('_')])
+    # signature = inspect.signature(wespeaker.load_model)
+    # print(signature)
+
+    model = wespeaker.load_model(pretrain_dir)
+    # print("Available methods:", [method for method in dir(model) if not method.startswith('_')])
+
+    model.set_device(device)
+
+    embeddings = []
+
+    for file_path in tqdm(audio_files, desc="Embeddings computing process"):
+        embedding = model.extract_embedding(file_path)
+        embedding = embedding.cpu().numpy()
+        embeddings.append({
+            'file_path': str(file_path),
+            'embedding': embedding
+        })
+    return embeddings
+
+
+def main():
+    """
+    Main function to extract embeddings from audio files listed in CSV files
+    and save them in the specified format.
+    """
+    parser = argparse.ArgumentParser(description="Extract embeddings from LibriSpeech audio files listed in CSV.")
+    parser.add_argument("--data_dir", type=str, default="data/processed",
+                        help="Path to directory with processed CSV files (train_cps.csv, test_cps.csv, dev_cps.csv).")
+    parser.add_argument("--pretrain_dir", type=str, default="./pretrain_dir",
+                        help="Path to wespeaker model pretrain_dir.")
+    parser.add_argument("--output", type=str, required=True, choices=["npy", "chromadb"],
+                        help="Embeddings saving format: npy or chromadb.")
+    parser.add_argument("--save_path", type=str, default="./embeddings",
+                        help="Save path for calculated embeddings.")
+    args = parser.parse_args()
+
+    # Define CSV paths
+    csv_files = {
+        'train': os.path.join(args.data_dir, 'train_cps.csv'),
+        'test': os.path.join(args.data_dir, 'test_cps.csv'),
+        'dev': os.path.join(args.data_dir, 'dev_cps.csv')
+    }
+
+    # Check if CSV files exist
+    for split, csv_path in csv_files.items():
+        if not os.path.exists(csv_path):
+            raise FileNotFoundError(f"CSV file {csv_path} does not exist.")
+
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    # Extract embeddings for each split
+    embeddings_dict = {}
+    for split, csv_path in csv_files.items():
+        audio_files = get_audio_files_from_csv(csv_path)
+        embeddings = extract_embeddings(audio_files, device, args.pretrain_dir)
+        assign_labels_by_speaker_id(embeddings, csv_path)
+        embeddings_dict[split] = embeddings
+
+    # Save embeddings based on output format
+    if args.output == "npy":
+        save_to_npy(embeddings_dict, args.save_path)
+    elif args.output == "chromadb":
+        for split, embeddings in embeddings_dict.items():
+            save_to_chromadb(embeddings, args.save_path, split)
+
+
+if __name__ == '__main__':
+    main()
+==================================================
+
+Файл: interpretability_scripts/probing.py
+==================================================
+import argparse
+import os
+from utils import get_audio_path, prepare_chunks, save_tmp, delete_tmp
+from utils import (
+    GetActivations,
+    get_activations,
+    get_layers
+)
+from utils import (
+    evaluate_probing,
+    read_metrics,
+    plot_metrics,
+    save_metrics,
+    save_to_csv
+)
+from datasets import ActivationDataset
+from models import train_probing_model
+from pathlib import Path
+import json
+
+import numpy as np
+from torch.utils.data import DataLoader
+import torch
+import wespeaker
+
+
+def check_paths(*paths):
+    """
+    Checks if the specified paths exist.
+    If at least one path does not exist - throws an exception.
+    """
+    for path in paths:
+        if not os.path.exists(path):
+            raise FileNotFoundError(f"Folder {path} does not exists.")
+
+
+def get_remaining_layers(layers, resume_layer, done_message, on_done=None):
+    """
+    Returns a list of layers that have not yet been processed,
+    starting from resume_layer.
+
+    Used to continue training from where you stopped.
+    After all layers have been processed, the on_done function is called.
+    """
+    if resume_layer is None:
+        return layers
+    if resume_layer == layers[-1]:
+        print(done_message)
+        if on_done:
+            on_done()
+        return []
+    try:
+        layers = layers[layers.index(resume_layer) + 1:]
+    except ValueError:
+        raise ValueError(
+            f"Resume layer {resume_layer} not found in model.")
+    return layers
+
+
+def load_or_extract_acts(i, chunk, acts_model, device, layer, mode):
+    """
+    Loads or retrieves activations and labels
+    for the specified chunk and layer.
+
+    If saved activations and labels exist, they are loaded from disk.
+    Otherwise, the activations are retrieved from the model.
+    """
+    acts_path = f"{mode}/tmp_acts_{i}.pt"
+    labels_path = f"{mode}/tmp_labels_{i}.pt"
+
+    if not os.path.exists(acts_path):
+        activations, labels = get_activations(
+            acts_model, chunk, device, i, layer, mode)
+    else:
+        acts_list = torch.load(acts_path)
+        labels = torch.load(labels_path)
+        activations = []
+        for num, act in enumerate(acts_list):
+            with torch.no_grad():
+                act = act.to(device)
+                layer_acts, _ = acts_model(
+                    act,
+                    layer,
+                    True,
+                    identity_file=f"{mode}_identity_{i}_{num}.pt")
+                activations.append(layer_acts[layer])
+
+    dataset = ActivationDataset(activations, labels)
+
+    return dataset, activations, labels
+
+
+def test(
+        probing_model,
+        skf_test,
+        test_paths,
+        test_labels,
+        acts_model,
+        device, layer, args
+):
+    """
+    Tests the trained probing model
+    on chunks of test data for the specified layer.
+    """
+    all_preds, all_labels, chunk_rows = [], [], []
+
+    for i, (_, chunk_idx) in enumerate(
+            skf_test.split(test_paths, test_labels)):
+        chunk = test_paths[chunk_idx]
+        dataset, activations, labels = load_or_extract_acts(i, chunk,
+                                                            acts_model, device,
+                                                            layer, "test")
+        loader = DataLoader(dataset, batch_size=32, shuffle=False)
+
+        save_tmp(activations, "test", f"tmp_acts_{i}.pt")
+        save_tmp(labels, "test", f"tmp_labels_{i}.pt")
+
+        probing_model.eval()
+        y_pred_chunk, y_true_chunk = [], []
+        with torch.no_grad():
+            for X_batch, y_batch in loader:
+                X_batch = X_batch.to(device)
+                outputs = probing_model(X_batch).cpu()
+                y_pred_chunk.extend(outputs.numpy())
+                y_true_chunk.extend(y_batch.numpy())
+
+        for filepath, true_label, pred in zip(chunk, y_true_chunk,
+                                              y_pred_chunk):
+            chunk_rows.append({
+                "filename": os.path.relpath(filepath, args.test_dir),
+                "true_label": true_label,
+                f"prediction_{layer}": int(pred > 0.5)
+            })
+
+        all_preds.extend(y_pred_chunk)
+        all_labels.extend(y_true_chunk)
+
+    return all_preds, all_labels, chunk_rows
+
+
+def train_and_test(model, acts_model, train_files, test_files, device, args):
+    """
+    Trains and tests a probing model for
+    activations of each layer of the SimAM ResNet model.
+
+    Defines a list of model layers,
+    then for each layer trains the probing model on training data,
+    tests it on test data, saves metrics and predictions,
+    saves training progress (layer) to a JSON file.
+    """
+    layers = get_layers(model)
+    resume_file = "last_layer.json"
+    message = "All layers have already been processed."
+
+    if Path(resume_file).exists():
+        with open(resume_file, "r") as f:
+            resume_layer = json.load(f).get("last_layer")
+    else:
+        resume_layer = None
+
+    layers = get_remaining_layers(layers, resume_layer, message)
+    if not layers:
+        return
+
+    skf_train, train_paths, train_labels = prepare_chunks(
+        train_files, args.chunk_size)
+    skf_test, test_paths, test_labels = prepare_chunks(
+        test_files, args.chunk_size)
+
+    for layer in layers:
+        print(f"Processing layer: {layer}")
+        probing_model = None
+
+        print("Training")
+        for i, (_, chunk_idx) in enumerate(
+            skf_train.split(train_paths, train_labels)
+        ):
+            chunk = train_paths[chunk_idx]
+            dataset, activations, labels = load_or_extract_acts(
+                i, chunk, acts_model, device, layer, "train")
+            loader = DataLoader(dataset, batch_size=32, shuffle=True)
+
+            probing_model = train_probing_model(
+                loader,
+                input_dim=dataset.audio_data.shape[-1],
+                device=device,
+                existing_model=probing_model
+            )
+
+            save_tmp(activations, "train", f"tmp_acts_{i}.pt")
+            save_tmp(labels, "train", f"tmp_labels_{i}.pt")
+
+        print("Testing")
+        all_preds, all_labels, chunk_rows = test(
+            probing_model,
+            skf_test,
+            test_paths,
+            test_labels,
+            acts_model,
+            device,
+            layer,
+            args
+        )
+
+        metrics = evaluate_probing(
+            layer, np.array(all_preds), np.array(all_labels))
+        save_metrics([metrics], args.text_save_path)
+        save_to_csv(chunk_rows, layer, args.csv_save_path)
+
+        with open(resume_file, "w") as f:
+            json.dump({"last_layer": layer}, f)
+
+        torch.cuda.empty_cache()
+
+    acts_model.delete_identity()
+    delete_tmp("train")
+    delete_tmp("test")
+    plot_metrics(read_metrics(args.text_save_path), args.visual_save_path)
+
+
+def main():
+    """
+    Main function.
+    """
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--pretrain_dir",
+        type=str,
+        required=True,
+        help="Path to wespeaker model pretrain_dir."
+    )
+    parser.add_argument(
+        "--train_dir",
+        type=str,
+        default="./train_audio",
+        help="Path to train audio files."
+    )
+    parser.add_argument(
+        "--test_dir",
+        type=str,
+        default="./test_audio",
+        help="Path to test audio files."
+    )
+    parser.add_argument(
+        "--chunk_size",
+        type=int,
+        default=1000,
+        help="Size of file chunks per epoch."
+    )
+    parser.add_argument(
+        "--text_save_path",
+        type=str,
+        default="./result/probing.txt",
+        help="Save path for text result."
+    )
+    parser.add_argument(
+        "--csv_save_path",
+        type=str,
+        default="./result/probing.csv",
+        help="Save path for csv result."
+    )
+    parser.add_argument(
+        "--visual_save_path",
+        type=str,
+        default="./result/probing.png",
+        help="Save path for visual result."
+    )
+    args = parser.parse_args()
+
+    check_paths(args.pretrain_dir, args.train_dir, args.test_dir)
+
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model = wespeaker.load_model_local(args.pretrain_dir)
+    model.set_device(device)
+    acts_model = GetActivations(model)
+
+    train_files = get_audio_path(args.train_dir)
+    test_files = get_audio_path(args.test_dir)
+
+    train_and_test(model, acts_model, train_files, test_files, device, args)
+
+
+if __name__ == '__main__':
+    main()
+
+==================================================
+
+Файл: models/README.md
+==================================================
+# Наполнение
+
+В этой папка будет код или код-обёртки для всех моделей, наример для анализа эмбеддингов, для послойного анализа и тд. 
+
+TODO: необходимо добавить абстрактный класс
+==================================================
+
+Файл: models/__init__.py
+==================================================
+from .embeddings_model import EmbeddingModel
+from .probing_model import ProbingCls
+from .train_models import train_probing_model, train_emb_model
+==================================================
+
+Файл: models/embeddings_model.py
+==================================================
+import torch.nn as nn
+
+
+class EmbeddingModel(nn.Module):
+    """
+    Baseline model class for embeddings
+    """
+
+    def __init__(self, input_dim=256, hidden_dim=128, num_classes=2):
+        super(EmbeddingModel, self).__init__()
+        self.fc1 = nn.Linear(input_dim, hidden_dim)
+        self.fc2 = nn.Linear(hidden_dim, num_classes)
+
+    def forward(self, x):
+        x1 = self.fc1(x)
+        x2 = self.fc2(x1)
+        return x1, x2
+
+==================================================
+
+Файл: models/probing_model.py
+==================================================
+import torch.nn as nn
+
+
+class ProbingCls(nn.Module):
+    """
+    Baseline model class for probing
+    """
+
+    def __init__(self, input_size, num_classes=1):
+        super(ProbingCls, self).__init__()
+        self.fc = nn.Linear(input_size, num_classes)
+        self.act = nn.Sigmoid()
+
+    def forward(self, x):
+        return self.act(self.fc(x))
+
+==================================================
+
+Файл: models/train_models.py
+==================================================
+from .probing_model import ProbingCls
+
+import torch
+import torch.optim as optim
+from tqdm import tqdm
+
+
+def train_emb_model(
+        model,
+        train_loader,
+        optimizer,
+        criterion,
+        num_epoch,
+        device
+):
+    """
+    Train a model on a train dataset
+    """
+    for epoch in tqdm(range(num_epoch), desc="Training Progress"):
+        model.train()
+
+        for embeddings_batch, labels_batch in tqdm(
+                train_loader, desc=f"Epoch {epoch + 1}/{num_epoch}"
+        ):
+            embeddings_batch = embeddings_batch.to(device)
+
+            labels_batch = labels_batch.long()
+            _, outputs = model(embeddings_batch)
+            loss = criterion(outputs, labels_batch.to(device))
+
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
+
+def train_probing_model(
+        train_loader,
+        input_dim,
+        device,
+        num_epoch=3,
+        existing_model=None
+):
+    """
+    Train a model on a train dataset.
+    """
+    model = existing_model or ProbingCls(input_dim).to(device)
+    criterion = torch.nn.BCELoss()
+    optimizer = optim.Adam(model.parameters(), lr=3e-4)
+
+    model.train()
+    for epoch in tqdm(range(num_epoch), desc="Training Progress"):
+        for X_batch, y_batch in train_loader:
+            X_batch, y_batch = X_batch.to(device), y_batch.to(device).float()
+
+            optimizer.zero_grad()
+            outputs = model(X_batch).squeeze(1)
+            loss = criterion(outputs, y_batch)
+            loss.backward()
+            optimizer.step()
+
+    return model
+
+==================================================
+
+Файл: models/voxblink2_samresnet34/voxblink2_samresnet34/config.yaml
+==================================================
+data_type: shard
+dataloader_args:
+  batch_size: 128
+  drop_last: true
+  num_workers: 16
+  pin_memory: false
+  prefetch_factor: 8
+dataset_args:
+  aug_prob: 0.6
+  fbank_args:
+    dither: 1.0
+    frame_length: 25
+    frame_shift: 10
+    num_mel_bins: 80
+  filter: true
+  filter_args:
+    max_num_frames: 800
+    min_num_frames: 100
+  num_frms: 200
+  resample_rate: 16000
+  sample_num_per_epoch: 0
+  shuffle: true
+  shuffle_args:
+    shuffle_size: 2500
+  spec_aug: false
+  spec_aug_args:
+    max_f: 8
+    max_t: 10
+    num_f_mask: 1
+    num_t_mask: 1
+    prob: 0.6
+  speed_perturb: true
+enable_amp: false
+exp_dir: exp/samresnet34/
+gpus:
+- 0
+- 1
+log_batch_interval: 100
+loss: CrossEntropyLoss
+loss_args: {}
+margin_scheduler: MarginScheduler
+margin_update:
+  epoch_iter: 4265
+  final_margin: 0.2
+  fix_start_epoch: 40
+  increase_start_epoch: 20
+  increase_type: exp
+  initial_margin: 0.0
+  update_margin: true
+model: SimAM_ResNet34_ASP
+model_args:
+  embed_dim: 256
+
+==================================================
+
+Файл: poetry.toml
+==================================================
+[virtualenvs]
+in-project = true
+
+==================================================
+
+Файл: pyproject.toml
+==================================================
+[tool.poetry]
+name = "pp-past"
+version = "0.1.0"
+description = ""
+authors = ["NikiZ83 <nikita.zh83@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydub = "^0.25.1"
+librosa = "^0.11.0"
+pandas = "^2.3.3"
+tqdm = "^4.67.1"
+wespeaker = {git = "https://github.com/wenet-e2e/wespeaker.git"}
+chromadb = "^1.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+==================================================
+
+Файл: src/preprocess.py
+==================================================
+import argparse
+import logging
+from pathlib import Path
+
+import pandas as pd
+from pydub import AudioSegment
+from tqdm import tqdm
+
+logger = logging.getLogger(__name__)
+
+def get_cps(audio_path: Path, text: str) -> float:
+    """
+    Рассчитывает скорость речи (CPS) для аудиофайла.
+    CPS - characters per second (буквы в секунду, учитывая только буквы и цифры).
+
+    :param audio_path: Путь к аудиофайлу (.flac)
+    :param text: Транскрипция аудио
+    :return: Скорость речи в буквах в секунду (CPS)
+    """
+    try:
+        audio = AudioSegment.from_file(audio_path, format="flac")
+        duration_seconds = len(audio) / 1000  # длительность в секундах
+        # Учитываем только буквы и цифры в тексте
+        char_count = len([char for char in text.strip() if char.isalnum()])
+        return char_count / duration_seconds if duration_seconds > 0 else 0
+    except Exception as err:
+        logger.error(f"Ошибка при обработке {audio_path}: {err}")
+        return 0
+
+def process_subset(base_path: Path, output_csv: Path):
+    """
+    Обрабатывает один subset LibriSpeech (train/dev/test),
+    создает CSV с CPS (буквы в секунду).
+
+    :param base_path: Путь к папке subset
+    :param output_csv: Путь для сохранения CSV
+    :return:
+    """
+    data = []
+
+    if not base_path.exists():
+        logger.error(f"Папка {base_path} не найдена!")
+        return
+
+    speaker_paths = [p for p in base_path.iterdir() if p.is_dir()]
+    for speaker_path in tqdm(speaker_paths, desc=f"Обработка спикеров в {base_path.name}"):
+        for chapter_path in speaker_path.iterdir():
+            if not chapter_path.is_dir():
+                continue
+
+            trans_file = chapter_path / f"{chapter_path.parent.name}-{chapter_path.name}.trans.txt"
+            if not trans_file.exists():
+                logger.warning(f"Транскрипция не найдена: {trans_file}")
+                continue
+
+            try:
+                with trans_file.open('r', encoding="utf-8") as file:
+                    lines = file.readlines()
+                    for line in tqdm(lines, desc=f"Обработка транскрипций в {chapter_path.name}", leave=False):
+                        try:
+                            audio_id, text = line.strip().split(' ', 1)
+                            audio_file = chapter_path / f"{audio_id}.flac"
+                            if audio_file.exists():
+                                cps = get_cps(audio_file, text)
+                                data.append({
+                                    'audio_path': str(audio_file),
+                                    'text': text,
+                                    'cps': cps,  # Изменено с 'wpm' на 'cps'
+                                    'speaker_id': speaker_path.name,
+                                    'chapter_id': chapter_path.name,
+                                    'audio_id': audio_id
+                                })
+                            else:
+                                logger.warning(f"Аудиофайл не найден: {audio_file}")
+                        except ValueError:
+                            logger.error(f"Ошибка формата в строке: {line.strip()}")
+            except Exception as err:
+                logger.error(f"Ошибка при чтении {trans_file}: {err}")
+
+    if data:
+        df = pd.DataFrame(data)
+        output_csv.parent.mkdir(parents=True, exist_ok=True)
+        df.to_csv(output_csv, index=False)
+        logger.info(f"Сохранено {len(df)} записей в {output_csv}")
+    else:
+        logger.warning(f"Нет данных для сохранения в {output_csv}")
+
+def main():
+    parser = argparse.ArgumentParser(description="Preprocess LibriSpeech for speech rate (CPS).")
+    parser.add_argument('--data_dir', type=Path, default=Path('data/raw'), help='Path to raw LibriSpeech data')
+    parser.add_argument('--output_dir', type=Path, default=Path('data/processed'),
+                        help='Path to save processed CSV files')
+    args = parser.parse_args()
+
+    subsets = [
+        ('dev-clean', 'dev_cps.csv'),  # Изменено с 'dev_wpm.csv' на 'dev_cps.csv'
+        ('test-clean', 'test_cps.csv'),  # Изменено с 'test_wpm.csv' на 'test_cps.csv'
+        ('train-clean-100', 'train_cps.csv'),  # Изменено с 'train_wpm.csv' на 'train_cps.csv'
+    ]
+
+    for subset, output_file in subsets:
+        base_path = args.data_dir / subset / "LibriSpeech" / subset
+        output_csv = args.output_dir / output_file
+        logger.info(f"Обработка {subset}...")
+        process_subset(base_path, output_csv)
+
+if __name__ == "__main__":
+    main()
+==================================================
+
+Файл: temp.txt
+==================================================
+def assign_labels_by_parent_dir(embeddings):
+    """
+    Assigns labels to classes. In this case, by the name of the parent folder.
+    """
+    for emb in embeddings:
+        class_name = Path(emb['file_path']).parent.name
+        emb['label'] = class_name
+
+def get_audio_path(audio_dir):
+    """
+    Recursively finds all audio files in the specified directory.
+    """
+    audio_dir = Path(audio_dir)
+    return list(audio_dir.glob('**/*.wav')) + list(audio_dir.glob('**/*.mp3'))
+
+
+def save_to_npy(embeddings, save_dir):
+    """
+    Saves embeddings in .npy format.
+    """
+    numpy_embs = np.array(embeddings)
+    np.save(os.path.join(save_dir, "numpy_embs.npy"), numpy_embs)
+
+
+def save_to_chromadb(embeddings, db_path, split):
+    """
+    Stores embeddings in ChromaDB.
+    """
+    client = chromadb.PersistentClient(path=db_path)
+    collection = client.get_or_create_collection(name="gender_embeddings")
+
+    collection.add(
+        ids=[f"{split}_{i}" for i in range(len(embeddings))],
+        embeddings=[item['embedding'] for item in embeddings],
+        metadatas=[{
+            "file_path": item['file_path'], "label": item['label'],
+            "split": split
+        }
+            for item in embeddings]
+    )
+==================================================
+
+Файл: utils/README.md
+==================================================
+# Наполнение
+
+Здесь всякие вспомогательные скрипты, например класс GetActivations, функции get_audio_path, get_activations и тд
+==================================================
+
+Файл: utils/__init__.py
+==================================================
+from .file_ops import (
+    get_audio_path,
+    prepare_chunks,
+    save_tmp,
+    delete_tmp,
+    save_to_chromadb,
+    save_to_npy
+)
+from .embeddings import (
+    assign_labels_by_parent_dir,
+    get_loaders,
+    save_emb_metrics,
+    save_visualization
+)
+from .layers import (
+    GetActivations,
+    get_activations,
+    get_layers
+)
+from .metrics import (
+    evaluate_emb_model,
+    evaluate_probing,
+    read_metrics,
+    plot_metrics,
+    save_metrics,
+    save_to_csv
+)
+==================================================
+
+Файл: utils/embeddings.py
+==================================================
+import os
+from pathlib import Path
+from datasets import ClassificationEmbeddingsDataset
+
+import matplotlib.pyplot as plt
+from sklearn.manifold import TSNE
+from torch.utils.data import DataLoader
+import torch
+
+
+def get_loaders(source_path, source_type):
+    """
+    Creates dataloaders for train and test files.
+    """
+    train_dataset = ClassificationEmbeddingsDataset(
+        source_path, split="train", source_type=source_type)
+    test_dataset = ClassificationEmbeddingsDataset(
+        source_path, split="test", source_type=source_type)
+
+    train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+    test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)
+
+    return (
+        train_loader,
+        test_loader,
+        test_dataset,
+        train_dataset.audio_data.shape[1]
+    )
+
+
+def assign_labels_by_parent_dir(embeddings):
+    """
+    Assigns labels to classes. In this case, by the name of the parent folder.
+    """
+    for emb in embeddings:
+        class_name = Path(emb['file_path']).parent.name
+        emb['label'] = class_name
+
+
+def save_visualization(model, vectors, labels, save_path, device):
+    """
+    Saves embedding visualization in .png files.
+    """
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+
+    vectors = torch.FloatTensor(vectors).to(device)
+    with torch.no_grad():
+        x1, predicted = model(vectors)
+
+    reducer = TSNE(n_components=2, random_state=42)
+    x1_reduced = reducer.fit_transform(x1.detach().cpu().numpy())
+
+    unique_labels = list(set(labels))
+
+    plt.figure(figsize=(10, 8))
+    for label in unique_labels:
+        indices = [i for i, lbl in enumerate(labels) if lbl == label]
+        plt.scatter(
+            x1_reduced[indices, 0],
+            x1_reduced[indices, 1],
+            label=f"Label: {label}",
+            alpha=0.6
+        )
+
+    plt.title("Visualization of embeddings after first layer")
+    plt.legend()
+    plt.savefig(save_path)
+    plt.close()
+
+
+def save_emb_metrics(metrics, save_path):
+    """
+    Saves computed metrics in .txt file.
+    """
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+
+    with open(save_path, 'w') as f:
+        for key, value in metrics.items():
+            f.write(f"{key}: {value}\n")
+
+==================================================
+
+Файл: utils/extract_features.py
+==================================================
+import torch
+import torchaudio
+import torchaudio.compliance.kaldi as kaldi
+import torchaudio.transforms as T
+
+resample_rate = 16000
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+
+def compute_fbank(wavform,
+                  sample_rate=16000,
+                  num_mel_bins=80,
+                  frame_length=25,
+                  frame_shift=10,
+                  cmn=True):
+    feat = kaldi.fbank(wavform,
+                       num_mel_bins=num_mel_bins,
+                       frame_length=frame_length,
+                       frame_shift=frame_shift,
+                       sample_frequency=sample_rate)
+    if cmn:
+        feat = feat - torch.mean(feat, 0)
+    return feat
+
+
+def extract_features(audio_path: str):
+    pcm, sample_rate = torchaudio.load(audio_path,
+                                       normalize=False)
+    if sample_rate != 16000:
+        resampler = T.Resample(orig_freq=sample_rate, new_freq=16000)
+        pcm = resampler(pcm)
+        sample_rate = 16000
+    pcm = pcm[:, :sample_rate * 2]
+    return extract_feature_from_pcm(pcm, sample_rate)
+
+
+def extract_feature_from_pcm(pcm: torch.Tensor, sample_rate: int):
+    pcm = pcm.to(torch.float)
+    if sample_rate != resample_rate:
+        pcm = torchaudio.transforms.Resample(
+            orig_freq=sample_rate, new_freq=resample_rate)(pcm)
+    feats = compute_fbank(pcm,
+                          sample_rate=resample_rate,
+                          cmn=True)
+    feats = feats.unsqueeze(0)
+    feats = feats.to(device)
+
+    return feats
+
+==================================================
+
+Файл: utils/file_ops.py
+==================================================
+from pathlib import Path
+import os
+import shutil
+
+import chromadb
+import torch
+import numpy as np
+from sklearn.model_selection import StratifiedKFold
+
+
+def get_audio_path(audio_dir):
+    """
+    Recursively finds all audio files in the specified directory.
+    """
+    audio_dir = Path(audio_dir)
+    return list(audio_dir.glob('**/*.wav')) + list(audio_dir.glob('**/*.mp3'))
+
+
+def prepare_chunks(train_files, chunk_size, random_state=42):
+    """
+    Splits the data into stratified chunks.
+    """
+    n_chunks = max(2, len(train_files) // chunk_size)
+    file_paths = np.array(train_files)
+    file_labels = np.array([Path(f).parent.name for f in train_files])
+
+    skf = StratifiedKFold(n_splits=n_chunks, shuffle=True,
+                          random_state=random_state)
+    return skf, file_paths, file_labels
+
+
+def save_to_npy(embeddings, save_dir):
+    """
+    Saves embeddings in .npy format.
+    """
+    numpy_embs = np.array(embeddings)
+    np.save(os.path.join(save_dir, "numpy_embs.npy"), numpy_embs)
+
+
+def save_to_chromadb(embeddings, db_path, split):
+    """
+    Stores embeddings in ChromaDB.
+    """
+    client = chromadb.PersistentClient(path=db_path)
+    collection = client.get_or_create_collection(name="gender_embeddings")
+
+    collection.add(
+        ids=[f"{split}_{i}" for i in range(len(embeddings))],
+        embeddings=[item['embedding'] for item in embeddings],
+        metadatas=[{
+            "file_path": item['file_path'], "label": item['label'],
+            "split": split
+        }
+            for item in embeddings]
+    )
+
+
+def save_tmp(data, dir_name, file_name):
+    """
+    Saves transferred data to a temporary directory as a PyTorch file.
+    If the directory does not exist, it will be created.
+    """
+    folder = Path(dir_name)
+    folder.mkdir(exist_ok=True)
+    torch.save(data, folder / file_name)
+
+
+def delete_tmp(dir_name):
+    """
+    Deletes the specified directory and all its contents.
+    """
+    if os.path.exists(dir_name):
+        shutil.rmtree(dir_name)
+
+==================================================
+
+Файл: utils/layers.py
+==================================================
+from .extract_features import extract_features
+import os
+from pathlib import Path
+import shutil
+
+from sklearn.preprocessing import LabelEncoder
+import torch
+import torch.nn as nn
+from tqdm import tqdm
+
+
+class GetActivations(nn.Module):
+    """
+    A class for obtaining activations of ResNet model intermediate layers.
+
+    Provides preservation of the intermediate tensor (identity) for use in
+    residual links and retrieves outputs from a given layer.
+    """
+    def __init__(self, model):
+        super().__init__()
+        self.model = model
+        self.saved_out = None
+        self.identity_dir = Path("tmp_identity")
+        self.identity_dir.mkdir(exist_ok=True)
+
+    def save_identity(self, file_name):
+        """
+        Saves the current saved_out (identity-tensor) to a file.
+        """
+        file_path = self.identity_dir / file_name
+        torch.save(self.saved_out, file_path)
+
+    def delete_identity(self):
+        """
+        Deletes the temporary identity files directory, if it exists.
+        Used to clean up after activation extraction is complete.
+        """
+        if os.path.exists("tmp_identity"):
+            shutil.rmtree("tmp_identity")
+
+    def _process_first_relu(self, x, model_front):
+        """
+        Applies the initial transformations (Conv + BN + ReLU) to the input
+        and saves the result to self.saved_out.
+        """
+        out = x.permute(0, 2, 1).unsqueeze(dim=1)
+        out = model_front.relu(model_front.bn1(model_front.conv1(out)))
+        self.saved_out = out.clone()
+        return out
+
+    def _load_identity(self, identity_file, device):
+        """
+        Loads the saved identity-tensor from disk
+        and saves it to self.saved_out.
+        """
+        path = self.identity_dir / identity_file
+        if path.exists():
+            self.saved_out = torch.load(path, map_location=device)
+
+    def forward(
+            self, x, target_layer, from_activation=False, identity_file=None
+    ):
+        """
+        A forward pass through the model for the specified layer,
+        with identity-tensors saved or loaded.
+        """
+        activations = {}
+        model_front = self.model.model.front
+        out = x
+
+        if not from_activation:
+            out = self._process_first_relu(x, model_front)
+
+            if identity_file:
+                self.save_identity(identity_file)
+            if target_layer == "first relu":
+                activations["first relu"] = out
+                return activations, out
+        else:
+            if identity_file:
+                self._load_identity(identity_file, x.device)
+            out = x
+
+        for name, layer in model_front.named_children():
+            c_sim = 0
+            c_relu = 0
+
+            for block_idx, block in layer.named_children():
+                identity = self.saved_out
+
+                c_relu += 1
+                if f"{name} relu {c_relu}" == target_layer:
+                    out = block.relu(block.bn1(block.conv1(out)))
+                    activations[f"{name} relu {c_relu}"] = out
+                    return activations, out
+
+                c_sim += 1
+                if f"{name} SimAM {c_sim}" == target_layer:
+                    out = block.bn2(block.conv2(out))
+                    out = block.SimAM(out)
+                    activations[f"{name} SimAM {c_sim}"] = out
+                    return activations, out
+
+                c_relu += 1
+                if f"{name} relu {c_relu}" == target_layer:
+                    if block.downsample is not None:
+                        identity = block.downsample(identity)
+
+                    out += identity
+                    out = block.relu(out)
+                    self.saved_out = out.clone()
+
+                    if identity_file:
+                        self.save_identity(identity_file)
+                    activations[f"{name} relu {c_relu}"] = out
+                    return activations, out
+
+        if "pooling" == target_layer:
+            out = self.model.model.pooling(out)
+            activations["pooling"] = out
+            return activations, out
+
+        if self.model.model.drop:
+            out = self.model.model.drop(out)
+
+        return activations, out
+
+
+def get_layers(model):
+    """
+    Returns a list of names of all extracted SimAM ResNet model layers.
+    """
+    layers = []
+
+    model_front = model.model.front
+    layers.append("first relu")
+
+    for name, layer in model_front.named_children():
+        c_relu = 0
+        c_sim = 0
+        if name in ['layer1', 'layer2', 'layer3', 'layer4']:
+            for sec_name, sec_layer in layer.named_children():
+                c_relu += 1
+                layers.append(f"{name} relu {c_relu}")
+                c_sim += 1
+                layers.append(f"{name} SimAM {c_sim}")
+                c_relu += 1
+                layers.append(f"{name} relu {c_relu}")
+    layers.append("pooling")
+
+    return layers
+
+
+def get_activations(model, audio_files, device, chunk_num, layer, mode):
+    """
+    Retrieves activations of the specified layer for a set of audio files.
+
+    Uses a pre-trained model and the GetActivations class.
+    For each audio file, an identity-tensor is stored or loaded (if required).
+    The resulting activations are saved to a list.
+    """
+    label_encoder = LabelEncoder()
+    labels = [Path(f).parent.name for f in audio_files]
+    labels = label_encoder.fit_transform(labels)
+
+    activations = []
+    with torch.no_grad():
+        for i, audio_path in enumerate(tqdm(
+            audio_files, desc="Extracting activations"
+        )):
+            feats = extract_features(audio_path).to(device)
+            acts, _ = model(
+                feats, layer,
+                identity_file=f"{mode}_identity_{chunk_num}_{i}.pt")
+            activations.append(acts[layer].cpu())
+    return activations, labels
+
+==================================================
+
+Файл: utils/metrics.py
+==================================================
+import os
+
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+from sklearn.metrics import accuracy_score, precision_score, recall_score, \
+    f1_score
+import torch
+from tqdm import tqdm
+
+
+def evaluate_emb_model(model, test_loader, device):
+    """
+    Evaluates a model on a test dataset. Calculates accuracy,
+    precision, recall and f1-score
+    """
+    model.eval()
+    total_samples_test = 0
+    true_labels = []
+    pred_labels = []
+    with torch.no_grad():
+        for embeddings_batch, labels_batch in tqdm(
+                test_loader, desc="Evaluation Progress"):
+            embeddings_batch = embeddings_batch.to(device)
+
+            labels_batch = labels_batch.long()
+            x1, outputs = model(embeddings_batch)
+
+            total_samples_test += 1
+
+            _, predicted = torch.max(outputs.cpu(), 1)
+            true_labels.extend(labels_batch.numpy())
+            pred_labels.extend(predicted.numpy())
+
+    metrics = {
+        "accuracy": accuracy_score(true_labels, pred_labels),
+        "precision": precision_score(true_labels, pred_labels),
+        "recall": recall_score(true_labels, pred_labels),
+        "f1_score": f1_score(true_labels, pred_labels)
+    }
+
+    return metrics
+
+
+def evaluate_probing(layer, y_pred, y_true):
+    """
+    Computes classification metrics (accuracy and F1-score) for a given layer.
+
+    Converts probabilistic y_pred predictions into binary labels, then
+    compares them with the true y_true labels and computes the metrics.
+    """
+    y_pred_labels = (y_pred >= 0.5).astype(int).squeeze(1)
+    acc = accuracy_score(y_true, y_pred_labels)
+    f1 = f1_score(y_true, y_pred_labels)
+    return layer, {"accuracy": acc, "f1_score": f1}
+
+
+def read_metrics(file_path):
+    """
+    Reads metrics from a text file saved in save_metrics format.
+    """
+    metrics_list = []
+    current_layer = None
+    current_metrics = {}
+    with open(file_path, 'r') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                if current_layer and current_metrics:
+                    metrics_list.append((current_layer, current_metrics))
+                    current_layer, current_metrics = None, {}
+                continue
+            if ':' not in line:
+                if current_layer and current_metrics:
+                    metrics_list.append((current_layer, current_metrics))
+                    current_metrics = {}
+                current_layer = line
+            else:
+                key, value = line.split(':', 1)
+                current_metrics[key.strip()] = float(value.strip())
+    if current_layer and current_metrics:
+        metrics_list.append((current_layer, current_metrics))
+    return metrics_list
+
+
+def plot_metrics(metrics_list, save_path):
+    """
+    Builds Accuracy and F1-score graphs by layers
+    and saves them to the specified file.
+
+    The function builds two line graphs - one for accuracy
+    and one for F1-score - by layers from metrics_list.
+    X-axes are layer identifiers.
+    """
+    layers = [m[0] for m in metrics_list]
+    accuracies = [m[1]["accuracy"] for m in metrics_list]
+    f1_scores = [m[1]["f1_score"] for m in metrics_list]
+    plt.figure(figsize=(10, 5))
+    plt.subplot(1, 2, 1)
+    plt.plot(layers, accuracies, color='b', label="Accuracy")
+    plt.xticks(rotation=90, fontsize=6)
+    plt.xlabel("Layers")
+    plt.ylabel("Accuracy")
+    plt.title("Accuracy across layers")
+    plt.legend()
+    plt.subplot(1, 2, 2)
+    plt.plot(layers, f1_scores, color='g', label="F1-score")
+    plt.xticks(rotation=90, fontsize=6)
+    plt.xlabel("Layers")
+    plt.ylabel("F1-score")
+    plt.title("F1-score across layers")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(save_path)
+
+
+def save_metrics(metrics_list, save_path):
+    """
+    Saves metrics by layer to a text file.
+
+    For each layer, the metrics are written in the form:
+        <layer>
+        accuracy: <value>
+        f1_score: <value>
+
+    If the file already exists, new metrics are added to the end.
+    """
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    with open(save_path, 'a') as f:
+        for layer, metrics in metrics_list:
+            f.write(f"{layer}\n")
+            for key, value in metrics.items():
+                f.write(f"{key}: {value}\n")
+
+
+def save_to_csv(chunk_rows, layer, save_path):
+    """
+    Saves or updates a CSV file with model predictions for a specified layer.
+
+    The function takes a list of strings (predictions and labels)
+    and saves them to a CSV file.
+    If the file already exists:
+        - Adds a column for the predictions of the corresponding layer
+            if it does not exist.
+        - Updates the true_label and prediction_<layer> values
+            for existing records by file name.
+        - Adds new rows if the filename does not exist in the current CSV.
+
+    If the file does not exist, it will be created and
+    populated with the passed rows.
+    """
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    df_new = pd.DataFrame(chunk_rows)
+    prediction_col = f"prediction_{layer}"
+
+    if os.path.exists(save_path):
+        df_existing = pd.read_csv(save_path)
+
+        if prediction_col not in df_existing.columns:
+            df_existing[prediction_col] = np.nan
+
+        for _, row in df_new.iterrows():
+            filename = row["filename"]
+            true_label = row["true_label"]
+            prediction = row[prediction_col]
+
+            if filename in df_existing["filename"].values:
+                idx = df_existing[df_existing["filename"] == filename].index[0]
+
+                if pd.isna(df_existing.at[idx, "true_label"]):
+                    df_existing.at[idx, "true_label"] = true_label
+
+                if pd.isna(df_existing.at[idx, prediction_col]):
+                    df_existing.at[idx, prediction_col] = prediction
+            else:
+                new_row = {col: np.nan for col in df_existing.columns}
+                new_row["filename"] = filename
+                new_row["true_label"] = true_label
+                new_row[prediction_col] = prediction
+                df_existing = pd.concat(
+                    [df_existing, pd.DataFrame([new_row])], ignore_index=True)
+
+        df_existing.to_csv(save_path, index=False)
+    else:
+        df_new.to_csv(save_path, index=False)
+
+==================================================
+

@@ -1,0 +1,21 @@
+,cca_corr
+first relu,0.7219227731192553
+layer1 relu 1,0.7123931205895524
+layer1 SimAM 1,0.7086968952160888
+layer1 relu 2,0.7275252361967145
+layer1 relu 3,0.7266931908076617
+layer1 SimAM 2,0.7038245805243427
+layer1 relu 4,0.7324044323140966
+layer1 relu 5,0.7354050879917325
+layer1 SimAM 3,0.7368345631269569
+layer1 relu 6,0.7393824503752557
+layer4 relu 1,0.0
+layer4 SimAM 1,0.0
+layer4 relu 2,0.0
+layer4 relu 3,0.0
+layer4 SimAM 2,0.0
+layer4 relu 4,0.0
+layer4 relu 5,0.0
+layer4 SimAM 3,0.0
+layer4 relu 6,0.0
+pooling,0.0
