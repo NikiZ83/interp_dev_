@@ -1,8 +1,11 @@
 data/raw
 
-data/processed
+/models/voxblink2_samresnet34
+/models/voxblink2_samresnet34_ft
+/models/voxblink2_samresnet100
+/models/voxblink2_samresnet100_ft
 
-/models
+
 
 __pycache__/
 *.pyc
